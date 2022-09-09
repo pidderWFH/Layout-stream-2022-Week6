@@ -1,0 +1,9 @@
+.navbar{
+    &-logo{
+        background-image: url("../images/logo2.svg");
+        height: 24px;
+        @include media-breakpoint-up(sm){
+            
+        }
+    }
+}

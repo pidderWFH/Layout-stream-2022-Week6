@@ -1,6 +1,30 @@
-@import "../../../node_modules/bootstrap/scss/functions";
+@import "../../../node_modules/bootstrap/scss/functions"; 
+
+//自定義變數 variables
 @import "./helpers/variables";
+
+//Require
+// @import "../../../node_modules/bootstrap/scss/variables";
+// @import "../../../node_modules/bootstrap/scss/mixins";
+// @import "../../../node_modules/bootstrap/scss/utilities";
+
+// 自定義utilites 須放在bootstrap前面
+@import "./helpers/utilities";
+
 @import "../../../node_modules/bootstrap/scss/bootstrap";
 
 
-@import './layout/index.scss'
+//utilitis/api 引入
+// @import "../../../node_modules/bootstrap/scss/utilities/api";
+ 
+//引入 google fonts
+@import url('https://fonts.googleapis.com/css2?family=Azeret+Mono:wght@400;700&family=Noto+Sans+TC:wght@400;700&display=swap');
+
+.font-family{
+    font-family: "Azeret Mono";
+}
+body{
+    color: #FFF;
+}
+@import "./components/navbar.scss";
+@import "./layout/index.scss";
