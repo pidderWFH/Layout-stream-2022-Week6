@@ -46,6 +46,7 @@ $yellow:  #ffc107 !default;
 $green:   #198754 !default;
 $teal:    #20c997 !default;
 $cyan:    #0dcaf0 !default;
+
 // scss-docs-end color-variables
 
 // scss-docs-start colors-map
@@ -62,7 +63,8 @@ $colors: (
   "cyan":       $cyan,
   "white":      $white,
   "gray":       $gray-600,
-  "gray-dark":  $gray-800
+  "gray-dark":  $gray-800,
+  
 ) !default;
 // scss-docs-end colors-map
 
@@ -73,9 +75,10 @@ $success:       $green !default;
 $info:          $cyan !default;
 $warning:       $yellow !default;
 $danger:        $red !default;
-$light:         $gray-100 !default;
+$light:         #C1C1C1 !default; //#C1C1C1 $gray-100
 $dark:          #1C1C1C !default;  //#1C1C1C gray-900
 $dark2:         #2D2D2D !default;
+$black:         #000000 !default;
 // scss-docs-end theme-color-variables
 
 // scss-docs-start theme-colors-map
@@ -89,6 +92,7 @@ $theme-colors: (
   "light":      $light,
   "dark":       $dark,
   "dark2":      $dark2,
+  "black":      $black,
 ) !default;
 // scss-docs-end theme-colors-map
 
@@ -239,7 +243,7 @@ $variable-prefix:             bs- !default;
 // The gradient which is added to components if `$enable-gradients` is `true`
 // This gradient is also added to elements with `.bg-gradient`
 // scss-docs-start variable-gradient
-$gradient: linear-gradient(104deg, $primary, $secondary) !default; //180deg, rgba($white, .15), rgba($white, 0)
+$gradient: linear-gradient(104deg, $secondary, $primary) !default; //180deg, rgba($white, .15), rgba($white, 0)
 // scss-docs-end variable-gradient
 
 // Spacing
@@ -258,6 +262,7 @@ $spacers: (
   4: $spacer * 1.5,  //24px
   5: $spacer * 3,    //48px
   6: $spacer * .75,   //12px
+  7: $spacer * 2,     //32px
 ) !default;
 
 $negative-spacers: if($enable-negative-margins, negativify-map($spacers), null) !default;
@@ -374,7 +379,7 @@ $border-color:                $gray-300 !default;
 // scss-docs-end border-variables
 
 // scss-docs-start border-radius-variables
-$border-radius:               .25rem !default;
+$border-radius:               .25rem !default; //4px
 $border-radius-sm:            .2rem !default;
 $border-radius-lg:            .3rem !default;
 $border-radius-pill:          50rem !default;

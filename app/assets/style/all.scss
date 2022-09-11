@@ -25,6 +25,9 @@
 }
 body{
     color: #FFF;
+    img{
+        object-fit: cover;
+    }
 }
 @import "./components/navbar.scss";
 @import "./layout/index.scss";
