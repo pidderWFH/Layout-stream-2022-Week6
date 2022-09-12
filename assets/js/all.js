@@ -87,4 +87,5 @@ var swiper = new Swiper(".course-Swiper", {
   // },
 
 });
+AOS.init();
 //# sourceMappingURL=all.js.map

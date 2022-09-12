@@ -12679,6 +12679,7 @@ fieldset:disabled .btn {
 }
 
 body {
+  overflow-x: hidden;
   color: #FFF;
 }
 
@@ -12767,6 +12768,42 @@ body li {
 @media (min-width: 768px) {
   .footer {
     padding: 24px 0;
+  }
+}
+
+.underline {
+  position: relative;
+}
+
+.underline::after {
+  content: "";
+  position: absolute;
+  bottom: -1rem;
+  width: 50px;
+  height: 3px;
+  background-color: #62DB54;
+}
+
+.underline.underline-center::after {
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.underline.underline-lg-start::after {
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+@media (min-width: 992px) {
+  .underline.underline-lg-start::after {
+    left: 0;
+    -webkit-transform: none;
+        -ms-transform: none;
+            transform: none;
   }
 }
 
@@ -12867,7 +12904,6 @@ body li {
 }
 
 .course {
-  margin: 0 12px;
   padding: 40px 0;
 }
 
