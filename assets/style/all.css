@@ -9107,6 +9107,10 @@ fieldset:disabled .btn {
   border-radius: 32px !important;
 }
 
+.rounded-7 {
+  border-radius: 8px !important;
+}
+
 .rounded-circle {
   border-radius: 50% !important;
 }
@@ -12683,9 +12687,87 @@ body img {
      object-fit: cover;
 }
 
-.navbar-logo {
-  background-image: url("../images/logo2.svg");
-  height: 24px;
+body a {
+  text-decoration: none;
+}
+
+body li {
+  list-style: none;
+}
+
+.navbar {
+  padding: 20px 0;
+}
+
+@media (min-width: 768px) {
+  .navbar {
+    padding: 24px 0;
+  }
+}
+
+.navbar::before {
+  content: "";
+  position: fixed;
+  top: 72px;
+  left: 0;
+  width: 50%;
+  height: 2px;
+  background-color: #62DB54;
+}
+
+@media (min-width: 768px) {
+  .navbar::before {
+    top: 102px;
+  }
+}
+
+@media (min-width: 992px) {
+  .navbar::before {
+    top: 112px;
+  }
+}
+
+.navbar::after {
+  content: "";
+  position: fixed;
+  top: 72px;
+  right: 0;
+  width: 50%;
+  height: 2px;
+  background-color: #09ACF5;
+}
+
+@media (min-width: 768px) {
+  .navbar::after {
+    top: 102px;
+  }
+}
+
+@media (min-width: 992px) {
+  .navbar::after {
+    top: 112px;
+  }
+}
+
+.footer {
+  padding: 16px 0;
+}
+
+.footer p {
+  color: #909090;
+  font-size: 12px;
+}
+
+@media (min-width: 768px) {
+  .footer p {
+    font-size: 16px;
+  }
+}
+
+@media (min-width: 768px) {
+  .footer {
+    padding: 24px 0;
+  }
 }
 
 .banner {
@@ -12697,15 +12779,6 @@ body img {
 
 .banner h1, .banner .h1 {
   font-size: 24px;
-}
-
-.banner span {
-  background: -webkit-gradient(linear, left top, left bottom, from(#09ACF5), to(#62DB54));
-  background: -o-linear-gradient(top, #09ACF5, #62DB54);
-  background: linear-gradient(to bottom, #09ACF5, #62DB54);
-  background-clip: text;
-  -webkit-background-clip: text;
-  color: transparent;
 }
 
 @media (min-width: 768px) {
@@ -12720,7 +12793,6 @@ body img {
 
 .banner-txt {
   border: 1px solid #fff;
-  margin: 0 12px;
   padding: 32px 0;
 }
 
@@ -12873,7 +12945,6 @@ body img {
 
 @media (min-width: 768px) {
   .slogan .slogan-bg {
-    width: 360px;
     height: 615px;
   }
 }
@@ -12990,7 +13061,7 @@ body img {
   font-size: 32px;
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 768px) {
   .slogan .cards {
     padding: 216px 48px;
   }
@@ -13215,6 +13286,54 @@ body img {
   }
   .joinus .cards {
     padding: 48px;
+  }
+}
+
+.intro-course {
+  padding: 40px 0;
+}
+
+@media (min-width: 768px) {
+  .intro-course {
+    padding-top: 44px;
+    padding-bottom: 80px;
+  }
+}
+
+.intro-course .course-items a {
+  height: 40px;
+  padding: 16px 32px;
+  color: #FFFFFF;
+  border: 1px solid #fff;
+}
+
+.intro-course .course-card {
+  padding: 32px 24px;
+}
+
+@media (min-width: 768px) {
+  .intro-course .course-card {
+    padding: 48px;
+  }
+}
+
+.intro-course .course-card img {
+  width: 100px;
+  height: 100px;
+}
+
+.intro-course .course-card a {
+  padding: 8px 16px;
+  width: 140px;
+}
+
+.mt-148 {
+  margin-top: 148px;
+}
+
+@media (min-width: 992px) {
+  .mr-88 {
+    margin-right: 88px;
   }
 }
 

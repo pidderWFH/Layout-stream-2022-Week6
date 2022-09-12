@@ -16,32 +16,32 @@
   </head>
 
   <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark2 ">
-      <div class="container">
-        <a class="navbar-brand nabar-logo" href="#"><img src="./assets/images/logo2.svg" height="42" alt="logo"></a>
-        <!-- <a class="navbar-brand d-sm-none" href="#"><img src="./assets/images/logo.svg" height="42" alt="logo"></a> -->
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark2 sticky-top">
+      <div class="container align-items-end">
+        <a class="navbar-brand d-md-none logo-img" href="./index.html"><img src="./assets/images/logo2.svg" class="mx-auto d-block " height="24" alt="logo"></a>
+        <a class="navbar-brand d-none d-md-flex" href="./index.html"><img src="./assets/images/logo.svg" class="" height="42" alt="logo"></a>
+        <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="material-icons-round text-primary fs-md-2">
+            drag_handle
+          </span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNavDropdown">
-          <ul class="navbar-nav ms-auto">
+          <ul class="navbar-nav ms-auto text-center mt-4 ">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">首頁</a>
+              <a class="nav-link active fs-7 text-white" aria-current="page" href="./index.html">首頁</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">課程介紹</a>
+              <a class="nav-link fs-7 text-white" href="./intro_course.html">課程介紹</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link d-flex align-items-center" href="#">
+            <li class="nav-item ">
+              <a class="nav-link d-flex justify-content-center align-items-center fs-7 text-white " href="#">
                 <span class="material-symbols-outlined me-1">
                   account_circle
                 </span>登入
               </a>
             </li>
-            <!-- <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                Dropdown link
-              </a>
+            <li class="nav-item dropdown">
+              
               <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                 <li><a class="dropdown-item" href="#">首頁</a></li>
                 <li><a class="dropdown-item" href="#">課程介紹</a></li>
@@ -53,7 +53,7 @@
                   </a>
                 </li>
               </ul>
-            </li> -->
+            </li>
           </ul>
         </div>
       </div>
@@ -70,7 +70,7 @@
                         <div class="square position-absolute top-0 start-100 translate-middle"></div>
                         <div class="square position-absolute top-100 start-0 translate-middle"></div>
                         <div class="square position-absolute top-100 start-100 translate-middle"></div>
-                        <h1 class="mb-4 fw-bold"><span class="txt-gradient">全台最豐富的程式家教</span><br>
+                        <h1 class="mb-4 fw-bold fs-4 fs-md-3 fs-xl-1"><span class="txt-gradient">全台最豐富的程式家教</span><br>
                         在實踐中化理想為現實
                         </h1>
                         <p class="my-0 fs-md-7 fs-8 ">全台最專業師資｜到府程式家教｜客製化課程</p>
@@ -262,24 +262,24 @@
 </div>
 <div class="container-fluid slogan">
     <div class="row d-md-flex text-center text-md-start">
-        <div class="cards slogan-bg ">
+        <div class="col-md-6 col-lg-3 cards slogan-bg ">
            
             <span class="material-icons mb-3  ">question_answer</span>
             <h3 class="fs-4 fw-bold mb-5 ">對症下藥，專案製作</h3>
             <p class="fs-7 text-break">除了可以瘋狂提問之外<br>還有機會一起完成專案</p>
          
         </div>
-        <div class="cards slogan-bg">
+        <div class="col-md-6 col-lg-3 cards slogan-bg">
             <span class="material-icons mb-3">tips_and_updates</span>
             <h3 class="fs-4 fw-bold mb-5">激發你的學習潛力</h3>
             <p class="fs-7 text-break">進度制課程安排&個人化學習建議有效管理你的學習動力</p>
         </div>
-        <div class="cards slogan-bg">
+        <div class="col-md-6 col-lg-3 cards slogan-bg">
             <span class="material-icons mb-3">thumb_up</span>
             <h3 class="fs-4 fw-bold mb-5">學習效率</h3>
             <p class="fs-7 text-break">針對學員狀況調整內容與步調<br>學習精準最有效</p>
         </div>
-        <div class="cards slogan-bg">
+        <div class="col-md-6 col-lg-3 cards slogan-bg">
             <span class="material-icons mb-3">supervisor_account</span>
             <h3 class="fs-4 fw-bold mb-5">一對一指導</h3>
             <p class="fs-7 text-break">針對目的進行客製化課程安排<br>快速的學以致用</p>
@@ -421,12 +421,13 @@
 </div>
 
 
-
-    <footer class="footer bg-dark2">
-      <div class="container text-center">
-        <copyright class="text-light">Coding Home © 2022 All Rights Reserved</copyright>
+    <div class="bg-dark2">
+      <div class="container">
+        <div class="footer text-center">
+          <p class="font-family my-0">Coding Home © 2022 All Rights Reserved</p>
+        </div>
       </div>
-    </footer>
+    </div>
 
     <script src="./assets/js/vendors.js"></script>
     <!-- Swiper JS -->
