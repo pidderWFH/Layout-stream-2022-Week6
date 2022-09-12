@@ -15,9 +15,7 @@
   h1{
     font-size: 24px;
   }
-  span{
-    @include txt-gradient;
-  }
+
   @include media-breakpoint-up(md){
     h1{
       font-size: 48px;
@@ -33,7 +31,7 @@
   // margin-top: 126px;
   // margin-bottom: 138px;
   border: 1px solid #fff;
-  margin: 0 12px;
+  // margin: 0 12px;
   padding: 32px 0;
   @include media-breakpoint-up(md){
     margin: 0;
@@ -153,7 +151,6 @@
   .slogan-bg{
     height: 263px;
     @include media-breakpoint-up(md){
-      width: 360px;
       height: 615px;
     }
   }
@@ -232,10 +229,9 @@
     span{
       font-size: 32px;
     }
-    @include media-breakpoint-up(xl){
+    @include media-breakpoint-up(md){
       padding: 216px 48px;
       span{
-        // text-align: start;
         color: #C1C1C1;
       }
     }
@@ -355,10 +351,6 @@
   margin-left: -16px;
 }
 .feedback-Swiper{
-  // .swiper{
-  //   width: 100%;
-  //   height: 100%;
-  // }
   
   .swiper-button{
     &-prev{

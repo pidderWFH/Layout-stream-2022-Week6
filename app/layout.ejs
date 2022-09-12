@@ -16,32 +16,32 @@
   </head>
 
   <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark2 ">
-      <div class="container">
-        <a class="navbar-brand nabar-logo" href="#"><img src="./assets/images/logo2.svg" height="42" alt="logo"></a>
-        <!-- <a class="navbar-brand d-sm-none" href="#"><img src="./assets/images/logo.svg" height="42" alt="logo"></a> -->
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark2 sticky-top">
+      <div class="container align-items-end">
+        <a class="navbar-brand d-md-none logo-img" href="./index.html"><img src="./assets/images/logo2.svg" class="mx-auto d-block " height="24" alt="logo"></a>
+        <a class="navbar-brand d-none d-md-flex" href="./index.html"><img src="./assets/images/logo.svg" class="" height="42" alt="logo"></a>
+        <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="material-icons-round text-primary fs-md-2">
+            drag_handle
+          </span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNavDropdown">
-          <ul class="navbar-nav ms-auto">
+          <ul class="navbar-nav ms-auto text-center mt-4 ">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">首頁</a>
+              <a class="nav-link active fs-7 text-white" aria-current="page" href="./index.html">首頁</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">課程介紹</a>
+              <a class="nav-link fs-7 text-white" href="./intro_course.html">課程介紹</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link d-flex align-items-center" href="#">
+            <li class="nav-item ">
+              <a class="nav-link d-flex justify-content-center align-items-center fs-7 text-white " href="#">
                 <span class="material-symbols-outlined me-1">
                   account_circle
                 </span>登入
               </a>
             </li>
-            <!-- <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                Dropdown link
-              </a>
+            <li class="nav-item dropdown">
+              
               <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                 <li><a class="dropdown-item" href="#">首頁</a></li>
                 <li><a class="dropdown-item" href="#">課程介紹</a></li>
@@ -53,19 +53,20 @@
                   </a>
                 </li>
               </ul>
-            </li> -->
+            </li>
           </ul>
         </div>
       </div>
     </nav>
 
     <%- contents %>
-
-    <footer class="footer bg-dark2">
-      <div class="container text-center">
-        <copyright class="text-light">Coding Home © 2022 All Rights Reserved</copyright>
+    <div class="bg-dark2">
+      <div class="container">
+        <div class="footer text-center">
+          <p class="font-family my-0">Coding Home © 2022 All Rights Reserved</p>
+        </div>
       </div>
-    </footer>
+    </div>
 
     <script src="./assets/js/vendors.js"></script>
     <!-- Swiper JS -->

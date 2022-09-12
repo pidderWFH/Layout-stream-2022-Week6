@@ -28,6 +28,14 @@ body{
     img{
         object-fit: cover;
     }
+    a{
+        text-decoration: none;
+    }
+    li{
+        list-style: none;
+    }
 }
 @import "./components/navbar.scss";
+@import "./layout/layout.scss";
 @import "./layout/index.scss";
+@import "./layout/introCourse.scss";

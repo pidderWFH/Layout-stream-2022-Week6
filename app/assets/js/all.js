@@ -59,3 +59,31 @@ var swiper = new Swiper(".feedback-Swiper", {
     prevEl: '.swiper-button-prev',
   },
 });
+var swiper = new Swiper(".course-Swiper", {
+  // Optional parameters
+  // autoHeight: true,
+  autoHeight: true,
+  slidesPerView: 2,
+  centeredSlides: false,
+  spaceBetween: 16,
+  grabCursor: true,
+  mousewheel: true,
+  // effect: 'fade',
+  // fadeEffect: {
+  //   crossFade: true
+  // },
+  // autoplay: {
+  //   delay: 3000,
+  // },
+  // // If we need pagination
+  // pagination: {
+  //   el: '.swiper-pagination',
+  //   clickable: true,
+  // },
+
+  // // Navigation arrows
+  // navigation: {
+  //   nextEl: '.swiper-button-next',
+  //   prevEl: '.swiper-button-prev',
+  // },
+});
