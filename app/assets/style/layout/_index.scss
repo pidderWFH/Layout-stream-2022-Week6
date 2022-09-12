@@ -4,7 +4,34 @@
   -webkit-background-clip: text;
   color: transparent;
 }
+.underline{
+  position: relative;
 
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: -1rem;
+    width: 50px;
+    height: 3px;
+    background-color: $primary;
+  }
+  &.underline-center::after {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  &.underline-lg-start{
+    &::after {
+      left: 50%;
+      transform: translateX(-50%);
+
+      @include media-breakpoint-up(lg){
+        left: 0;
+        transform: none;
+      }
+    }
+  }
+
+}
 
 .banner{
  
@@ -88,7 +115,7 @@
   font-size: 50px;
 }
 .course{
-  margin: 0 12px;
+  // margin: 0 12px;
   padding: 40px 0;
   .cards{
 

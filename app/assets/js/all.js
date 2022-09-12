@@ -87,3 +87,4 @@ var swiper = new Swiper(".course-Swiper", {
   //   prevEl: '.swiper-button-prev',
   // },
 });
+AOS.init();
