@@ -8,16 +8,19 @@
     .course-items{
         
         a{
-            height: 40px;
+            // height: 40px;
             padding: 16px 32px;
             color: #FFFFFF;
-            border: 1px solid $white;
+            border: 10px solid $white;
            
         }
         
     }
     .course-card{
         padding: 32px 24px;
+        a{
+            width: 140px;
+        }
         @include media-breakpoint-up(md){
             padding: 48px;
         }
@@ -27,7 +30,7 @@
         }
         a{
             padding: 8px 16px;
-            width: 140px;
+            width: 168px;
         }
     }
 }

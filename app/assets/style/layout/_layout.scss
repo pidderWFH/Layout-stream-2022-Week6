@@ -1,3 +1,12 @@
+.navbar{
+
+    .nav-item{
+        &:hover{
+            background-color: $dark;
+            border-radius: 4px;
+        }
+    }
+}
 .footer{
     padding: 16px 0;
     p{
