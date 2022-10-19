@@ -14,26 +14,22 @@ var swiper = new Swiper(".mySwiper", {
   //   crossFade: true
   // },
   autoplay: {
-    delay: 1000
+    delay: 1000,
+    disableOnInteraction: false
   },
   // pagination: {
   //   el: ".swiper-pagination",
   //   clickable: true,
   // },
   breakpoints: {
-    // when window width is >= 320px
-    // 320: {
-    //   slidesPerView: 1,
-    //   spaceBetween: 5
-    // },
-    // when window width is >= 480px
-    480: {
+    // when window width is >= 768px
+    768: {
       slidesPerView: 5,
-      spaceBetween: 10
+      spaceBetween: 12
     },
-    // when window width is >= 1360px
-    1360: {
-      slidesPerView: 10,
+    // when window width is >= 992px
+    1200: {
+      slidesPerView: 9,
       spaceBetween: 16
     }
   }
@@ -47,7 +43,8 @@ var swiper = new Swiper(".feedback-Swiper", {
     crossFade: true
   },
   autoplay: {
-    delay: 3000
+    delay: 3000,
+    disableOnInteraction: false
   },
   // If we need pagination
   pagination: {
